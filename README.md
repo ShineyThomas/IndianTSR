@@ -5,6 +5,7 @@ Official repository for the manuscript:
 > **"Progressive Knowledge Distillation for Extreme Model Compression in Traffic Sign Detection: Bridging High-Capacity Visual AI and Edge-Deployable Recognition"**
 > Shiney Thomas, John Varghese, Juby Mathew
 > *The Visual Computer*, Springer, 2025 (under review)
+> 
 
 ## Key Results
 
@@ -58,6 +59,8 @@ Six versions isolating each technique:
 | V4 | YOLOv12x teacher | 85.8% |
 | V5 | Single-step x→n (22.8×) | 70.5% |
 | V6 | **Progressive x→l→m→s→n** | **76.3%** |
+| V5† | Single-step x→n (low α ablation) | 67.1% |
+† Alpha ablation: V5 retrained with α=0.05/0.10/0.15 (V6 values). Confirms staged architecture — not α parameterisation — drives V6's gain.
 
 ## Edge Deployment
 
@@ -99,3 +102,4 @@ pip install ultralytics torch torchvision pandas numpy
 Code: MIT License
 Dataset: Available for academic research purposes only.
 Contact corresponding author for full dataset access.
+Email: shineythomas@amaljyothi.ac.in
